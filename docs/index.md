@@ -18,4 +18,4 @@ I also have experience working with people early in their programming journey, a
 
 ## The state of the site (it's early)
 
-I started writing yesterday. It's public because it's easy to publish.
+I started writing yesterday. It's public because it's easy to publish. Hooray for the internet!
