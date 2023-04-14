@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "webguide"
+version = "0.1.0"
+description = ""
+authors = ["Steve Landey <steve@steveasleep.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mkdocs-material = "9.1.6"
+pymdown-extensions = "9.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

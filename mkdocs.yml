@@ -1,0 +1,57 @@
+site_name: The Ordinary Guide to Web Development
+site_url: https://steveasleep.com/ordinaryguide/
+site_author: Martin Donath
+site_description: >-
+  A web site with evergreen information and advice about making web sites
+
+repo_name: irskep/ordinaryguide
+repo_url: https://github.com/irskep/ordinaryguide
+copyright: Copyright &copy; 2023 Steve Landey
+
+theme:
+  name: material
+  palette:
+    primary: amber
+    accent: blue
+  features:
+    - navigation.expand
+    - navigation.sections
+    - navigation.tracking
+    - navigation.top
+    - toc.integrate
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.betterem
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+      auto_title: true
+      line_spans: __span
+
+nav:
+  - Home: index.md
+  - Stacks:
+      - Overview: stacks/index.md
+      - Backend: stacks/backend.md
+      - Frontend: stacks/frontend.md
