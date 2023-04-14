@@ -31,7 +31,7 @@ Anything that's been around for at least ten years:
 
 Most web sites written by hobbyists can probably run on SQLite forever.
 
-In practice, you can deploy SQLite in production by mounting a persistent volume on your web machine and use [Litestream](https://litestream.io/) to replicate it to S3.
+In practice, you can deploy SQLite in production by mounting a persistent volume on your web machine and using [Litestream](https://litestream.io/) to replicate it to S3.
 
 Using SQLite isn't even necessarily a scaling tradeoff. It has the unique advantage that roundtrip time to make a query is zero milliseconds, because the database driver is running in your application process.
 
