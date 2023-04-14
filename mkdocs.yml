@@ -10,6 +10,8 @@ copyright: Copyright &copy; 2023 Steve Landey
 
 theme:
   name: material
+  icon:
+    logo: material/code-tags
   palette:
     primary: amber
     accent: blue
@@ -18,12 +20,26 @@ theme:
     - navigation.sections
     - navigation.tracking
     - navigation.top
+    - navigation.footer
     - toc.integrate
+
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://mastodon.gamedev.place/@irskep
+    - icon: fontawesome/brands/github
+      link: https://github.com/irskep
 
 extra_css:
   - stylesheets/extra.css
 
+plugins:
+  - search
+  - git-revision-date-localized
+
 markdown_extensions:
+  - smarty:
+      smart_angled_quotes: True
   - abbr
   - admonition
   - attr_list

@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.9"
 mkdocs-material = "9.1.6"
 pymdown-extensions = "9.11"
+mkdocs-git-revision-date-localized-plugin = "^1.2.0"
 
 
 [build-system]
