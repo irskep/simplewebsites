@@ -9,7 +9,23 @@ All these things work together to send HTML, CSS, and JavaScript from your serve
 The stack I promote on this web site is Python, Flask, SQLite, and Vue, with Sass on the side, which all work together to build a multi-page app.
 
 ```mermaid
-graph TD;
+graph LR;
+server[Python+Flask web server];
+
+db[SQLite database];
+
+db <--> server;
+
+browser[User's web browser];
+server -- HTTP --> browser;
+
+vue[.vue files];
+vue -- Vite --> JavaScript;
+JavaScript --> server;
+
+scss[.scss files];
+scss -- "sass" --> CSS;
+CSS --> server;
 ```
 
 I enjoy shipping things. Once I ship them, I enjoy not needing to do any more work just to keep them running.
