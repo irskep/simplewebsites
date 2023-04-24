@@ -1,12 +1,32 @@
 ---
-title: Let's cut through the noise
+title: Operationally Simple Web Sites
 ---
 
-# Let's cut through the noise
+# Operationally Simple Web Sites
 
-This site is about how to put together a web app in as un-trendy a way as possible. I wrote it because I think people get taught how to do web development in a really weird way these days, and I want to provide an alternative that leaves folks with a better idea of what they're doing.
+This site is about how to put together a web app using sturdy, simple, modern technology. It will be cheap to deploy, and keep working long-term. Optimize for _shipping_, not just _building_.
 
-This site does **not** have step-by-step tutorials on how to write JavaScript or how to put your first Flask app together. It's about how to make good choices so that when you want to get fancy or keep your site running for a long time, you don't run into walls.
+If building your web site is your full-time job, this guide is not for you. It's for people who are learning the ropes, or people building side projects where the point is to ship a product rather than to play around with technology.
+
+## What does operational simpicity mean?
+
+### Few moving parts
+
+A bicycle is easier to fix than a car. The fewer individual pieces there are, the easier it is to understand and fix problems.
+
+### Dependencies that don't require ongoing upgrades
+
+Some popular frameworks have made major backward-incompatible changes to their APIs and build tools within the past couple of years. One way to avoid dealing with these changes is to use simpler frameworks with simpler tooling needs.
+
+### Battle-tested tools
+
+There is no reason to use "cutting-edge" technology to build 99% of web applications. If you use tools with great documentation and many answers on Stack Overflow, it will be easier to find solutions to your problems.
+
+## Surely you'd have to sacrifice UX and developer productivity?
+
+Not really, depending on what you're doing. There's nothing special about frontend JavaScript frameworks that makes them "more powerful" than what web browser APIs can do natively.
+
+The value of a frontend JS framework is in how it lets you organize your code, breaking down UI into components and breaking up business logic into conceptual chunks. The value of a build tool is in letting you organize your code the way you want to, and in using framework-specific syntax.
 
 ## Why you should listen to me
 
@@ -14,14 +34,6 @@ I've been making web sites for over twenty years. [Here's proof!](https://imacis
 
 I've built large production web frontends from scratch in JavaScript, and small production web backends from scratch in Python. On top of being a professional software engineer, I'm also an obsessive hobbyist. Most recently, I made [DIYBand.net](https://diyband.net), a web site builder for bands. I also made [Browserboard](https://browserboard.com), which is an online whiteboard that I've since sold. Before that, I did a bunch of wild stuff for startups that have since died. :smile:
 
-I also have experience working with people early in their programming journey, and I have some view of how they get tripped up.
-
-## Why be ordinary?
-
-When you use cutting-edge technology, you're committing to at least a few years of change, and taking on risk that a technology will be abandoned. When you use "old" technology that hasn't changed in a long time, you have a stronger guarantee that it will continue to work well into the future, and that it will be compatible with new things. You'll be able to find good answers to common questions on Stack Overflow.
-
-In general, your needs are not unique. Many have trodden these paths before. Follow in their footsteps.
-
 ## The state of the site (it's early)
 
-I started writing yesterday. It's public because it's easy to publish. Hooray for the internet!
+I'm still thinking out loud here, trying to figure out what the right message is.

@@ -1,8 +1,8 @@
-site_name: The Ordinary Guide to Web Development
+site_name: Operationally Simple Web Sites
 site_url: https://steveasleep.com/ordinaryguide/
-site_author: Martin Donath
+site_author: Steve Landey
 site_description: >-
-  A web site with evergreen information and advice about making web sites
+  How to make web sites that are easy and cheap to operate
 
 repo_name: irskep/ordinaryguide
 repo_url: https://github.com/irskep/ordinaryguide
