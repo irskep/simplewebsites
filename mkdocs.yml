@@ -71,7 +71,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Stacks:
+  - Choosing Tools:
       - Overview: stacks/index.md
       - Backend: stacks/backend.md
       - Frontend: stacks/frontend.md

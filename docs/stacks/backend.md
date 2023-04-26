@@ -1,4 +1,4 @@
-# A simple, reliable backend stack
+# Choosing a backend stack
 
 This page isn't done.
 
