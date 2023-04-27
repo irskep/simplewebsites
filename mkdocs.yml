@@ -1,11 +1,11 @@
 site_name: Operationally Simple Web Sites
-site_url: https://steveasleep.com/ordinaryguide/
+site_url: https://steveasleep.com/simplewebsites/
 site_author: Steve Landey
 site_description: >-
   How to make web sites that are easy and cheap to operate
 
-repo_name: irskep/ordinaryguide
-repo_url: https://github.com/irskep/ordinaryguide
+repo_name: irskep/simplewebsites
+repo_url: https://github.com/irskep/simplewebsites
 copyright: Copyright &copy; 2023 Steve Landey
 
 theme:
