@@ -4,35 +4,33 @@ title: Operationally Simple Web Sites
 
 # Operationally Simple Web Sites
 
-This site is sort of a super-blog post surveying various ways to make web sites with an eye toward simplicity with modern amenities. Today's web is full of voices shouting to use this or that hot new thing, and the loudest voices are often the least experienced, or the most motivated to sell a specific thing, regardless of its real value, so here's one guy named Steve telling you what's up.
+This site is sort of a super-blog post surveying various ways to make web sites with an eye toward simplicity and modern amenities. Today's web is full of voices shouting to use this or that hot new thing, and the loudest voices are often the least experienced, or the most motivated to sell a specific thing, regardless of its real value. So here's one guy named Steve telling you what's up.
 
 I wrote all this with two kinds of people in mind. One is people early in their programming journey, who see many paths but aren't sure which to take, and get a lot of advice from people with unclear trustworthiness. The other is experienced programmers who want to ship a web app once in a while and feel bewildered by the pace of change.
 
 Once you skim everything here, you should have a good sense of one simple web stack, and also be aware of options for how to add complexity where it makes sense to you.
 
-This site is about how to put together a web app using sturdy, simple, modern technology. It will be cheap to deploy, and keep working long-term. Optimize for _shipping_, not just _building_.
-
-If building your web site is your full-time job, this guide is not for you. It's for people who are learning the ropes, or people building side projects where the point is to ship a product rather than to play around with technology.
+If building your web site is your full-time job, this guide is not for you. You already know everything and you don't need me.
 
 ## What is operational simpicity mean, and why do you want it?
 
 Operational simplicity means a few reliable parts instead of many fragile parts. It sometimes means giving up some convenience, but also has many benefits.
 
-### Cheap by default
+#### Cheap by default
 
 If you're not building your web site for a company, you're probably spending your own money to host it. Redundancy is expensive.
 
-### It fits in your head
+#### It fits in your head
 
 When a whole system fits in your head, you can reason about it better when something goes wrong. A bicycle is easier to fix than a car.
 
-### It's less likely to break
+#### It's less likely to break
 
 Popular web frameworks [regularly break](https://github.com/facebook/react/blob/main/CHANGELOG.md#breaking-changes) [backward compatibility](https://v3-migration.vuejs.org/breaking-changes/), requiring manual changes to keep things working if you want to use the latest version. You can try to stay on the old version, but there's always a risk that you'll be forced to upgrade one way or another.
 
 When your dependencies just do less stuff, there's less stuff that can break.
 
-### Stack Overflow works better
+#### Stack Overflow works better
 
 When your tools have been around for a long time, lots of questions have been asked and answered.
 
