@@ -4,13 +4,13 @@
 
 ## Custom syntax adds risk
 
-The things most "modern" UI frameworks have in common are declarative updates and custom syntax. The most common syntax is JSX, which lets you write `<div>Hello</div>` instead of `h('div', {}, 'Hello')`. Other frameworks like Svelte and Vue have more all-consuming custom file formats which let the build tool do fancy things to your code like wrap them in hidden function calls or generate completely different code.
+The things most "modern" UI frameworks have in common are (1) declarative updates and (2) custom syntax. The most common syntax is JSX, which lets you write `<div>Hello</div>` instead of `h('div', {}, 'Hello')`. Other frameworks like Svelte and Vue have more all-consuming custom file formats which let the build tool do fancy things to your code like wrap them in hidden function calls or generate completely different code.
 
 The convenience of these custom syntaxes and file formats is nice, but they introduce hard dependencies on a _transpilation_ step, where a complex program needs to run in order to turn your `.vue`, `.svelte`, or `.jsx` file into a `.js` file. And this step is almost always implemented as a plugin to another build tool such as Vite or Webpack, which means there are two dependencies that can break, and you're locked into the design decisions of the build tool you choose.
 
 ## Vanilla JS syntax is viable
 
-There are frameworks which don't require special syntax, but still provide declarative updates. The biggest one is [Lit](https://lit.dev/), with lots of established SaaS users. There's also the newcomer [Arrow](https://www.arrow-js.com/), which is a minimalist library that is very unopinionated and flexible, at the cost of making you figure out how to organize your own stuff.
+There are frameworks which don't require special syntax, but still provide declarative updates. The biggest one is [Lit](https://lit.dev/), which has lots of established SaaS users, but is relatively complex. There's also the newcomer [Arrow](https://www.arrow-js.com/), which is a minimalist library that is very unopinionated and flexible, at the cost of making you figure out how to organize your own stuff.
 
 Some of the custom-syntax frameworks also support ways of calling them without custom syntax. Vue calls its plain JS form ["render functions."](https://vuejs.org/guide/extras/render-function.html) [Preact](https://preactjs.com/guide/v10/getting-started/) and [Solid](https://www.solidjs.com/guides/getting-started#buildless-options) give you a couple different options for writing plain JS.
 
@@ -30,14 +30,14 @@ If you want to use a custom syntax, go off and learn Webpack or Vite. You're too
 
 While writing all that, I did some light research into which mainstream JS frameworks can be effectively used with esbuild alone with no plugins. Here's a best-effort summary of what I found.
 
-| Name                             | Plain JS by default? | Slower execution when using plain JS | JSX in esbuild? | Docs for plain JS use                                                                 |
-| -------------------------------- | -------------------- | ------------------------------------ | --------------- | ------------------------------------------------------------------------------------- |
-| [Lit](https://lit.dev/)          | **Yes**              | No                                   | No              | n/a                                                                                   |
-| [Arrow](https://arrow-js.com/)   | **Yes**              | No                                   | No              | n/a                                                                                   |
-| [React](https://arrow-js.com/)   | No                   | ?                                    | **Yes**         | [React Without JSX](https://legacy.reactjs.org/docs/react-without-jsx.html)           |
-| [Vue](https://vuejs.org/)        | No                   | Yes                                  | ?               | [Render Functions](https://vuejs.org/guide/extras/render-function.html)               |
-| [Preact](https://preactjs.com/)  | **Yes**              | ?                                    | **Yes**         | [Getting Started](https://preactjs.com/guide/v10/getting-started/)                    |
-| [SolidJS](https://preactjs.com/) | **Yes**              | Yes                                  | No              | [Buildless options](https://www.solidjs.com/guides/getting-started#buildless-options) |
+| Name                             | Plain JS by default? | Slower execution when using plain JS | JSX usable in esbuild? | Docs for plain JS use                                                                 |
+| -------------------------------- | -------------------- | ------------------------------------ | ---------------------- | ------------------------------------------------------------------------------------- |
+| [Lit](https://lit.dev/)          | **Yes**              | n/a                                  | No                     | n/a                                                                                   |
+| [Arrow](https://arrow-js.com/)   | **Yes**              | n/a                                  | No                     | n/a                                                                                   |
+| [React](https://arrow-js.com/)   | No                   | ?                                    | **Yes**                | [React Without JSX](https://legacy.reactjs.org/docs/react-without-jsx.html)           |
+| [Vue](https://vuejs.org/)        | No                   | Yes                                  | **Yes**                | [Render Functions](https://vuejs.org/guide/extras/render-function.html)               |
+| [Preact](https://preactjs.com/)  | **Yes**              | ?                                    | **Yes**                | [Getting Started](https://preactjs.com/guide/v10/getting-started/)                    |
+| [SolidJS](https://preactjs.com/) | **Yes**              | Yes                                  | No                     | [Buildless options](https://www.solidjs.com/guides/getting-started#buildless-options) |
 
 ## A note on Sass
 
