@@ -1,0 +1,14 @@
+:root {
+  --md-text-font: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  --md-code-font: Menlo, ui-monospace, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", monospace;
+}
+
+.md-header--shadow {
+  box-shadow: none;
+  transition: none;
+  border-bottom: 1px solid lightgray;
+}
