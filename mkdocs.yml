@@ -21,7 +21,6 @@ theme:
     - navigation.tracking
     - navigation.top
     - navigation.footer
-    - toc.integrate
 
 extra:
   social:

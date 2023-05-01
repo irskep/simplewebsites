@@ -34,11 +34,19 @@ When your dependencies just do less stuff, there's less stuff that can break.
 
 When your tools have been around for a long time, lots of questions have been asked and answered.
 
+### Here, I made diagrams
+
+=== "Conventional wisdom"
+
+    ![Conventional wisdom: a CDN, load balancer, three web servers, a huge JS build pipeline, and a separate database](images/conventional_wisdom.png)
+
+=== "Easy mode"
+
+    ![Easy mode: one web server with database in-process, and a small JS build pipeline](images/easy_mode.png)
+
 ## Surely you'd have to sacrifice UX and developer productivity?
 
-Not really, depending on what you're doing. There's nothing special about frontend JavaScript frameworks that makes them "more powerful" than what web browser APIs can do natively.
-
-The value of a frontend JS framework is in how it lets you organize your code, breaking down UI into components and breaking up business logic into conceptual chunks. The value of a build tool is in letting you organize your code the way you want to, and in using framework-specific syntax.
+Not really, depending on what you're doing. The value of a JS framework is not necessarily in making you more powerful, but in helping you organize your code. It's possible to do that without bringing in a fragile build pipeline and and tens of thousands of lines of framework code.
 
 ## Why you should listen to me
 
